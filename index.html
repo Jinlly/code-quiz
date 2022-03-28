@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cdoe quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/85f355c623.js" crossorigin="anonymous"></script>
+    <script defer src="assets/script/script.js"></script>
+    <!--apply fontawesome to get addtional style-->
+</head>
+
+<body>
+    <!--timer-->
+    <h2 id="timer" class="timecount">Time:100s</h2>
+
+    <!--the contant-->
+    <div class="container">
+        <!--the intro part-->
+        <div id="introtext" class="">
+            <h1 class="titile">Welcome the the coding quiz! Get yourself READY!!</h1>
+            <P class="description ">U r about to face a series of coding-related questions, plz try to anwser them and keep in mind that this quiz is under 100s time limit. Incorrect answers will penalize your time by 5 seconds!</P>
+            <!--the start and next button-->
+        </div>
+        <div class="controls">
+            <div style="text-align:center">
+                <button id="start-btn">Start!<i class="fa-solid fa-q"></i></button></a>
+                <button id="next-btn" class="next-btn hide">NEXT!<i class="fa-solid fa-q"></i></button></a>
+                <button id="finishbtn" class="finish-btn hide">Finish!</button>
+            </div>
+        </div>
+        <!--the question part-->
+        <div id="question-container" class="hide">
+            <h1>
+                <div id="question">question placeholder</div>
+            </h1>
+            <div id="answerbtns" class="btn-grid">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
+            </div>
+        </div>
+        <!--the finish page part-->
+        <div id="finishpage" class="hide">
+            <h2>Ur finished!</h2>
+            <p>Your final score is: <span id="final-score">0</span></p>
+            <!-- <p class="score ">Your final score is: </p> -->
+            <h1>Enter initials: <span id="initial-scale"><input id="initialinput" placeholder="initials"></span>
+                <button id="submit">Submit</button>
+            </h1>
+        </div>
+        <!--the score list part-->
+        <div id="scores" class="hide">
+            <h2>Scores<i class="fas fa-crown"></i></h2>
+            <!-- High scores should be added as a sorted desc list -->
+            <ol id="score-list">
+                <h1>palceholder</h1>
+            </ol>
+            <button id="retry">Retry<i class="fa-solid fa-q"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
